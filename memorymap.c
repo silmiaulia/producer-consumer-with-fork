@@ -8,7 +8,7 @@
 #include <sys/wait.h>   /*wait*/
 #include <errno.h>	    /* errno */
 
-#define MSGSIZE n
+#define MSGSIZE 50
 
 int main(int argc, char **argv) {
     
