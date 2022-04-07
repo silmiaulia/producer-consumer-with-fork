@@ -41,7 +41,7 @@ int main(){
             for(int i=0; i<n; i++){
                 writeNumber[i] = rand() % 20; //get random number
                 write(fd[1], &writeNumber[i], sizeof(writeNumber[i])); //menulis ke pipe
-                printf("Proucer %d in the first group process write random number : %d\n", i, writeNumber[i]); //print random number 
+                printf("Producer %d in the first group process write random number : %d\n", i, writeNumber[i]); //print random number 
             }
             break;
 
@@ -52,7 +52,7 @@ int main(){
             // baca yang ditulis child dari pipe
             for(int i=0; i<n; i++){
                 read(fd[0], &readNumber[i], sizeof(readNumber[i]));
-                printf("Consemer int the second group process read random number : %d\n", readNumber[i]); //print random number
+                printf("Consemer %d in the second group process read random number : %d\n", i, readNumber[i]); //print random number
                 sum = sum + readNumber[i]; //jumlahkan 
             }
             printf("sum from second group process: %d\n", sum);
