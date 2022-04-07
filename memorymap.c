@@ -36,6 +36,7 @@ int main(int argc, char **argv) {
                 //isi data di memory map
                 for(int i=0; i<n; i++){
                     shared[i] = rand() % 20; //mengisi angka random ke array
+                    printf("random number in the first group process : %d \n", shared[i]);
                 }
                 break;
         default:        /*  ortu */
@@ -46,7 +47,7 @@ int main(int argc, char **argv) {
                     if (pidWait == pid)  /* child sukses selesai*/
                         //cetak isi memory map
                         for (int i = 0; i<MSGSIZE; i++) {
-                          printf("random number from first group process : %d \n", shared[i]);
+                          printf("random number in the second group process : %d \n", shared[i]);
                           sum = sum + shared[i];
                         }
                         break; //keluar dari loop wait
