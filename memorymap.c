@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
                 //isi data di memory map
                 for(int i=0; i<n; i++){
                     shared[i] = rand() % 20; //mengisi angka random ke array
-                    printf("producer %d write random number : %d \n", i, shared[i]);
+                    printf("producer %d write random number : %d \n", i+1, shared[i]);
                 }
                 break;
         default:        /*  ortu */
@@ -47,7 +47,7 @@ int main(int argc, char **argv) {
                     if (pidWait == pid)  /* child sukses selesai*/
                         //cetak isi memory map
                         for (int i = 0; i<n; i++) {
-                          printf("consumer %d read random number : %d \n", i, shared[i]);
+                          printf("consumer %d read random number : %d \n", i+1, shared[i]);
                           sum = sum + shared[i];
                         }
                         break; //keluar dari loop wait
