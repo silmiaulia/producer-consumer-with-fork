@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
                 while (pidWait = wait(&status)) {   
                     if (pidWait == pid)  /* child sukses selesai*/
                         //cetak isi memory map
-                        for (int i = 0; i<MSGSIZE; i++) {
+                        for (int i = 0; i<n; i++) {
                           printf("consumer %d read random number : %d \n", i, shared[i]);
                           sum = sum + shared[i];
                         }
