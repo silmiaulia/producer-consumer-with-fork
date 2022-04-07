@@ -13,7 +13,7 @@
 int main(int argc, char **argv) {
     
     	int n;
-	    scanf("%d", &n); //input banyak proses
+	    scanf("%d", &n); //input 
 	    
         int pid;
         time_t t;
