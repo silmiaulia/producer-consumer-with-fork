@@ -1,12 +1,2 @@
-# Tugas-1-Producer-Consumer-dengan-Fork
-
-## Kelompok 5 C1
-Nama Anggota:
-- ALIFIA ISTI FADHILA (2000049)
-- SILMI AULIA ROHMAH (2000318)
-- ARZANIEL ETHAN MARTOSISWOYO (2001081)
-- HAKASA PUTRI (2007698)
-- LISTIA NINGRUM (2008084)
-
-
+# Producer-Consumer-with-Fork
 
